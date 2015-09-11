@@ -10,10 +10,10 @@ import org.json.simple.parser.ParseException;
 
 public class ExcelApplication{
 
-	private ExcelApplication(String filePath) {
+	private ExcelApplication() {
 	}
 
-	private int extractData(char excel, String filePath, String excelFilePath) throws FileNotFoundException, ParseException, IOException {
+	private static int extractData(char excel, String filePath, String excelFilePath) throws FileNotFoundException, ParseException, IOException {
 		int result;
 		switch (excel) {
 		case 'J':
@@ -43,8 +43,7 @@ public class ExcelApplication{
 	}
 	
 	public static int main(char exceloption, String filePath, String excelFilePath) throws FileNotFoundException, ParseException, IOException {
-		ExcelApplication excel = new ExcelApplication(excelFilePath);
-		int result = excel.extractData(exceloption, filePath, excelFilePath);
+		int result = extractData(exceloption, filePath, excelFilePath);
 		return result;
 	}
 

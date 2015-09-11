@@ -3,6 +3,7 @@ POI create excel file from JSON data or XML data
 
 Read a Json File:
 Example file format:
+```
 [ 
   { 
     "title1" : "First Name",
@@ -20,7 +21,7 @@ Example file format:
     "age" : 19
   }
 ]
-
+```
 Read a XML File:
 Example XML file Format:
 Working...
@@ -30,13 +31,13 @@ Working...
 Calling the method:
 main(char exceloption, String filePath, String excelFilePath)
 
-1. Excel option:
+* Excel option:
 	JSON (J) and XML (X) or the options.
 
-2. File Path:
+* File Path:
 	Source XML or JSON Path.
 
-3. Excel File Path:
+* Excel File Path:
 	Destination File Path.	
 	
 
