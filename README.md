@@ -38,7 +38,7 @@ main(char exceloption, String filePath, String excelFilePath)
 
 * Excel option:
 
-	JSON (J) and XML (X) or the options.
+	JSON (J) or XML (X) are the options.
 
 * File Path:
 
