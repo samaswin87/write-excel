@@ -24,7 +24,8 @@ public class ExcelApplication{
 			result = 1;
 			break;
 		case 'X':
-			System.out.println("XML parser");
+			XMLDataParser xmlparser = new XMLDataParser(filePath, excelFilePath);
+			xmlparser.createExcel();
 			result = 1;
 			break;
 		default:
